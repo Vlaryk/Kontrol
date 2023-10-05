@@ -29,9 +29,9 @@ string[] ModifiedArray(string[] array)
     return modifiedArray;
 }
 
-Console.WriteLine("Введите кол-во элементов массива");
-int N = Convert.ToInt32(Console.ReadLine());
-string[] array = new string[N];
+Console.WriteLine("Введите размер массива");
+int syze = Convert.ToInt32(Console.ReadLine());
+string[] array = new string[syze];
 FillArray(array);
 Console.WriteLine($"первоначальный массив: [{string.Join(", ", array)}]");
 Console.WriteLine($"измененный массив: [{string.Join(", ", ModifiedArray(array))}]");
