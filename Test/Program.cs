@@ -30,8 +30,8 @@ string[] ModifiedArray(string[] array)
 }
 
 Console.WriteLine("Введите размер массива");
-int syze = Convert.ToInt32(Console.ReadLine());
-string[] array = new string[syze];
+int size = Convert.ToInt32(Console.ReadLine());
+string[] array = new string[size];
 FillArray(array);
 Console.WriteLine($"первоначальный массив: [{string.Join(", ", array)}]");
 Console.WriteLine($"измененный массив: [{string.Join(", ", ModifiedArray(array))}]");
